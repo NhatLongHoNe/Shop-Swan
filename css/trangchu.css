@@ -1,0 +1,25 @@
+.header-content{
+    text-align: center;
+}
+
+.box-line{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.btn-line{
+    width: 367px;
+    height: 40px;
+    border-bottom:1px solid #111;
+} 
+.box-line .active{
+    border-bottom: 3px solid #111;
+}
+.trend{
+    margin: 20px auto 0 auto;
+    max-width: 1400px;
+}
+.n-row{
+    display: flex;
+    flex-wrap: wrap;
+}
