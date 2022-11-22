@@ -35,12 +35,42 @@ a {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
 .n-btn-common{
     padding:11px 25px;
     background-color:#000000;
     color:#fff;
     border-radius:40px;
     display: inline-block;
+}
+.btn-submit{
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 1px solid #111;
+    color: #111;
+    display: block;
+}
+.btn-register{
+    padding: 10px 30px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+    display: block;
+}
+
+.btn-buy-now{
+    text-align: center;
+    background-color: #111;
+    border: 1px solid #111;
+    line-height: 70px;
+    height: 70px;
+    width: 200px;
+    color: #fff;
+    display: block;
+}
+
+.n-d-none{
+    display: none;
 }
 .search-container {
     width: 500px;
@@ -104,7 +134,7 @@ input#search-bar:focus:-ms-placeholder {
     max-width: 1400px;
     justify-content: space-between;
 }
-.header .box-icon{
+.header .box-icon,.header .box-btn{
     margin: 0 15px;
     
 }
@@ -120,7 +150,6 @@ input#search-bar:focus:-ms-placeholder {
     margin-top: 20px;
     display: flex;
 }
-
 /* end header */
 
 /* footer */
