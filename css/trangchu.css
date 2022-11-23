@@ -12,10 +12,19 @@
     height: 40px;
     border-bottom:1px solid #111;
     margin-top: 40px;
+    font-size: 24px;
 } 
 .box-line .active{
     border-bottom: 3px solid #111;
 }
+
+.line-black{
+    max-width:1400px;
+    height: 1px;
+    background-color: #111;
+    margin: 0 auto;
+}
+
 .session-common{
     margin: 70px auto 0 auto;
     max-width: 1450px;
@@ -35,6 +44,10 @@
 }
 .session-common .box-content{
     margin-top:40px;
+}
+.session-common .header-content{
+    text-transform: uppercase;
+    font-size: 40px;
 }
 .product-price{
     margin-top: 10px;
@@ -80,7 +93,7 @@
 /* category */
 
 .category{
-    width:1450px;
+    max-width:1450px;
     margin:40px auto 0 auto; 
 }
 
@@ -120,3 +133,23 @@
     bottom: 84px;
     font-size: 24px;
 }
+/* category */
+
+.banner .banner-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 128px;
+    display: block;
+    word-break: break-all; 
+    width: 100%;
+    text-align: center;
+}
+.session-common .box-btn{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/* end category */
