@@ -37,6 +37,15 @@ a {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.mt-40{
+    margin-top: 40px !important;
+}
+.mt-40{
+    margin-bottom: 40px !important;
+}
+.mt-20{
+    margin-top: 20px !important;
+}
 .n-btn-common{
     padding:11px 25px;
     background-color:#000000;
@@ -68,6 +77,14 @@ a {
     width: 200px;
     color: #fff;
     display: block;
+}
+
+.btn-send-now{
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 1px solid #111;
+    color: #111;
+    display: inline-block;
 }
 
 .n-d-none{
@@ -217,4 +234,23 @@ input#search-bar:focus:-ms-placeholder {
 
 .slick-current {
   opacity: 1;
+}
+
+.n-input{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+.input-gray{
+    background: rgba(255, 255, 255, 0.7);
+}
+.input-gray::placeholder {
+    text-align:right;
+    padding-right: 40px;
 }
