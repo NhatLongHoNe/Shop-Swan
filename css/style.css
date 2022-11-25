@@ -3,7 +3,6 @@
     src: url(../font/roboto/Roboto-Regular.ttf);
 }
   
-
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +17,9 @@ img {
 a {
     text-decoration: none;
     color: #000000;
+}
+ul {
+    list-style: none;
 }
 .n-row{
     display: flex;
@@ -36,16 +38,50 @@ a {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
+.mr-0{
+    margin-right: 0 !important;
+}
 .mt-40{
     margin-top: 40px !important;
 }
-.mt-40{
+.mb-40{
     margin-bottom: 40px !important;
 }
 .mt-20{
     margin-top: 20px !important;
 }
+.mb-20{
+    margin-bottom: 20px !important;
+}
+.mr-20{
+    margin-right: 20px !important;
+}
+.mr-15{
+    margin-right: 15px !important;
+}
+.ml-20{
+    margin-left: 20px !important;
+}
+.mt-10{
+    margin-top: 10xp;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.bg-red{
+    background-color: red!important;
+}
+.bg-black{
+    background-color: black!important;
+}
+.bg-light-gray{
+    background-color: #EDE1C9!important;
+
+}
+/*  btn */
 .n-btn-common{
     padding:11px 25px;
     background-color:#000000;
@@ -53,40 +89,106 @@ a {
     border-radius:40px;
     display: inline-block;
 }
-.btn-submit{
-    padding: 10px 30px;
+.btn-white{
+    padding: 10px 20px;
     background-color: #fff;
     border: 1px solid #111;
     color: #111;
     display: block;
+    cursor: pointer;
 }
-.btn-register{
-    padding: 10px 30px;
+.btn-black{
+    padding: 10px 20px;
     background-color: #111;
     border: 1px solid #111;
     color: #fff;
     display: block;
+    cursor: pointer;
+
 }
 
 .btn-buy-now{
     text-align: center;
     background-color: #111;
     border: 1px solid #111;
+    color: #fff;
     line-height: 70px;
     height: 70px;
     width: 200px;
-    color: #fff;
     display: block;
 }
 
 .btn-send-now{
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: #fff;
     border: 1px solid #111;
     color: #111;
     display: inline-block;
 }
-
+.btn-color{
+    width: 100px;
+    height: 40px;
+    margin-right: 15px;
+    cursor: pointer;
+    display: block;
+}
+.btn-size{
+    padding: 10px 20px;
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    background-color: #fff;
+    border: 1px solid #111;
+    color: #111;
+    cursor: pointer;
+    display: block;
+    font-style: normal;
+}
+.btn-number{
+    padding: 10px 30px;
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 60px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+}
+.btn-policy{
+    padding:11px 25px;
+    color:#000000;
+    display: inline-block;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    width: 564px;
+    height: 144px;
+}
+.btn-policy-2{
+    color:#000000;
+    display: inline-block;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 144px;
+    width: 622px;
+    height: 144px;
+}
+/* end btn */
+.text-bold{
+    font-style: normal;
+    font-weight: 500;
+}
+.text-center{
+    text-align: center;
+}
 .n-d-none{
     display: none;
 }
@@ -160,10 +262,13 @@ input#search-bar:focus:-ms-placeholder {
     display: block;
     
 }
-.logo {
+.header .logo {
     width: 136px;
 }
-
+.header .logo img{
+    object-fit: cover;
+    display: inline-block;
+}
 .header-right{
     margin-top: 20px;
     display: flex;
@@ -210,7 +315,7 @@ input#search-bar:focus:-ms-placeholder {
 }
 
 .slick-slide {
-  margin: 0px 20px;
+  /* margin: 0px 20px; */
 }
 
 .slick-slide img {
@@ -235,7 +340,7 @@ input#search-bar:focus:-ms-placeholder {
 .slick-current {
   opacity: 1;
 }
-
+/* input */
 .n-input{
     display: block;
     width: 100%;
@@ -253,4 +358,17 @@ input#search-bar:focus:-ms-placeholder {
 .input-gray::placeholder {
     text-align:right;
     padding-right: 40px;
+}
+.nav{
+    max-width: 100%;
+    background-color: #000000;
+    height: 53px;
+}
+.nav-bar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+    line-height: 53px;
 }

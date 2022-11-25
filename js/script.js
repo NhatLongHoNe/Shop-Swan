@@ -19,3 +19,11 @@ $('.slider-for').slick({
     var slideno = $(this).data('slide');
     $('.slider-nav').slick('slickGoTo', slideno - 1);
   });
+
+  $('.fade').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: false,
+    cssEase: 'linear'
+  });

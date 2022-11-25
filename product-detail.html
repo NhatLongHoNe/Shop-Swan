@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <title> chi tiết sản phẩm</title>
+    <link rel="stylesheet" type="text/css" href="./common/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./common/slick/slick-theme.css">
     <!-- <link rel="stylesheet" href="./common/bootstrap/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/trangchu.css">
 </head>
 
 <body>
-    <div class="main">
+    <div class="main" id="product-detail">
         <!-- header -->
         <div class="header">
             <div class="logo">
@@ -42,35 +44,306 @@
                     </a>
                 </div>
                 <div class="box-btn">
-                    <a href="#" class="btn-submit">Đăng nhập</a>
+                    <a href="#" class="btn-white">Đăng nhập</a>
                 </div>
                 <div class="box-btn">
-                    <a href="#" class="btn-register">Đăng ký</a>
+                    <a href="#" class="btn-black">Đăng ký</a>
                 </div>
             </div>
         </div>
         <!-- end header -->
-        <!-- banner -->
-        <div class="banner">
-            <div class="box-img">
-                <img src="./images/banner.png" alt="">
-                <a href="#" class="btn-buy-now">BUY NOW</a>
+        <div class="nav mt-40">
+            <div>
+                <ul class="nav-bar">
+                    <li>TRANG CHỦ</li>
+                    <li>SẢN PHẨM</li>
+                    <li>TIN TỨC</li>
+                    <li>GIỚI THIỆU</li>
+                    <li>LIÊN HỆ</li>
+                </ul>
             </div>
         </div>
-        <!-- end banner -->
-        <!-- session-common -->
+
+        <div class="detail-content">
+            <div class="n-row">
+                <div class="detail-content-left">
+                    <div class="fade">
+                        <div>
+                            <img src="./images/SLIDE/1.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/SLIDE/2.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/SLIDE/3.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/SLIDE/4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-content-right">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2>
+                                ÁO NỈ MŨ TRÁI TIM
+                            </h2>
+                        </div>
+                        <div class="box-price mt-20">
+                            <div class="price-top n-row">
+                                <div class="price-top-right">
+                                    <del>300.000đ</del>
+                                </div>
+                                <div class="price-top-left">
+                                    <span>101.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-color">
+                            <div class="color-header">
+                                Màu sắc
+                            </div>
+                            <div class="n-row mt-20 colors">
+                                <p href="#" class="btn-color bg-red active"></p>
+                                <p href="#" class="btn-color bg-light-gray"></p>
+                            </div>
+                        </div>
+                        <div class="box-size mt-20">
+                            <div class="size-header">
+                                Kích thước
+                            </div>
+                            <div class="sizes n-row mt-20">
+                                <div class="btn-size active">
+                                    S
+                                </div>
+                                <div class="btn-size">
+                                    M
+                                </div>
+                                <div class="btn-size">
+                                    L
+                                </div>
+                                <div class="btn-size">
+                                   XL
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-amount mt-20">
+                            <div class="amount-header">
+                                Số lượng
+                            </div>
+                            <div class="box-input-amount n-row mt-20 mb-20" >
+                                <div class="input-amount-left"> - </div>
+                                <div>
+                                    <input type="text" id="txtAmount" class="n-input input-amount" value="1">
+                                </div>
+                                <div class="input-amount-right"> + </div>
+                            </div>
+                        </div>
+                        <div class="box-btn-amount box-btn n-row">
+                            <div class=" mr-15">
+                                <a href="#" class="btn-white">Thêm vào giỏ hàng</a>
+                                
+                            </div>
+                            <div class="">
+                                <a href="#" class="btn-black">Mua ngay</a>
+                            </div>
+                        </div>
+                        <div class="line-black mt-20"></div>
+                        <div class="box-detail mt-20">
+                           <p>
+                            MÔ TẢ SẢN PHẨM <br>
+                            Mã sản phẩm : 1.2.06.3.18.020.221.23 <br>
+                            - ÁO NỈ MŨ TRÁI TIM chất liệu nỉ da cá, kiểu dáng oversize <br>
+                            - Ngực áo đính patch mềm mới logo BOOLAAB + logo INFINITEE[04] <br>
+                            - Sau lưng in hình in BOOLAAB với công nghệ in digital hiện đại, kết hợp với họa tiết Op
+                            art gây hiệu ứng thị giác mạnh, tạo điểm nhấn cho set đồ.
+                           </p>
+                        </div>
+                        <div class="line-black mt-20"></div>
+                        <div class="box-ship mt-20">
+                            <h3>GIAO HÀNG</h3>
+                            <div class="btn-ship mt-20">
+                                <a href="#">
+                                    <img style="width:40px" src="./images/icon/box.png" alt="">
+                                    <p>Free ship đơn hàng trên 499.000đ</p>
+                                </a>
+                            </div>
+                            <div class="mt-20">
+                                <p>Chính sách giao hàng có thể thay đổi sau chương trình khuyến mãi</p>
+                            </div>
+                        </div>
+                        <div class="line-black mt-20"></div>
+                        <div class="box-return mt-20">
+                            <a href=""><u>CHÍNH SÁCH ĐỔI TRẢ HÀNG</u></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="evaluate">
+            <div class="line-black mb-20"></div>
+            <div class="box n-row">
+                <div class="box-header text-bold">
+                    <div>
+                        ĐÁNH GIÁ
+                    </div>
+                    <div>
+                        4/5
+                    </div>
+                </div>
+                <div class="box-star ml-20">
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-empty.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="line-black mt-20"></div>
+            
+            <div class="box n-row">
+                <div class="box-header-1 ">
+                    <p style="">Nguyễn Phương Thanh </p>
+                </div>
+                <div class="box-star ml-20">
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-empty.png" alt="">
+                    </div>
+                </div>
+                <div class="ml-20 pt-10">
+                    <p>Áo đẹp lắm, chất liệu cực kì ưng</p>
+                </div>
+            </div>
+            <div class="box n-row">
+                <div class="box-header-1 ">
+                    <p style="">Nguyễn Phương Thanh </p>
+                </div>
+                <div class="box-star ml-20">
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-full.png" alt="">
+                    </div>
+                    <div class="star-item">
+                        <img style="width:40px" src="./images/icon/star-empty.png" alt="">
+                    </div>
+                </div>
+                <div class="ml-20 pt-10">
+                    <p>Áo đẹp lắm, chất liệu cực kì ưng</p>
+                </div>
+            </div>
+            <div class="line-black mt-20"></div>
+        </div>
+
         <div class="session-common trend">
             <div class="box-header">
                 <h3 class="header-content">
-                    XU HƯỚNG NĂM NAY
+                    SẢN PHẨM LIÊN QUAN
                 </h3>
             </div>
-            <div class="box-line">
-                <div class="btn-line active">
-                    Nam
-                </div>
-                <div class="btn-line">
-                    Nữ
+            <div class="box-content">
+                <div class="n-row">
+                    <div class="box-product col-3">
+                        <div class="product-img">
+                            <img src="./images/all/home/1.png" alt="">
+                        </div>
+                        <div class="product-content">
+                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
+                        </div>
+                        <div class="product-price">
+                            <div class="product-price-top n-row">
+                                <div class="product-price-top-right">
+                                    <del>300.000đ</del>
+                                </div>
+                                <div class="product-price-top-left">
+                                    <span>101.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div class="product-img">
+                            <img src="./images/all/home/1-1.png" alt="">
+                        </div>
+                        <div class="product-content">
+                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
+                        </div>
+                        <div class="product-price">
+                            <div class="product-price-top n-row">
+                                <!-- <div class="product-price-top-right">
+                                    <del>300.000đ</del>
+                                </div> -->
+                                <div class="product-price-top-left">
+                                    <span>101.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div class="product-img">
+                            <img src="./images/all/home/1-2.png" alt="">
+                        </div>
+                        <div class="product-content">
+                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
+                        </div>
+                        <div class="product-price">
+                            <div class="product-price-top n-row">
+                                <div class="product-price-top-right">
+                                    <del>300.000đ</del>
+                                </div>
+                                <div class="product-price-top-left">
+                                    <span>10.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product col-3">
+                        <div class="product-img">
+                            <img src="./images/all/home/1-3.png" alt="">
+                        </div>
+                        <div class="product-content">
+                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
+                        </div>
+                        <div class="product-price">
+                            <div class="product-price-top n-row">
+                                <div class="product-price-top-right">
+                                    <del>300.000đ</del>
+                                </div>
+                                <div class="product-price-top-left">
+                                    <span>101.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="box-content">
@@ -150,252 +423,8 @@
                 </div>
             </div>
         </div>
-        <!-- end session-common -->
-        <!-- collection -->
-        <div class="session-common collection">
-            <div class="box-header">
-                <h3 class="header-content">
-                    XU HƯỚNG NĂM NAY
-                </h3>
-            </div>
-            <div class="box-line">
-                <div class="btn-line active">
-                    Nam
-                </div>
-                <div class="btn-line">
-                    Nữ
-                </div>
-            </div>
-            <div class="box-content">
-                <div class="n-row">
-                    <div class="box-product col-3">
-                        <div class="product-img">
-                            <img src="./images/all/home/2-1.png" alt="">
-                        </div>
-                        <div class="product-content">
-                            BỘ SƯU TẬP THEO MÙA
-                        </div>
-                        <div class="product-price">
-                            <div class="product-price-top n-row">
-                                <div class="product-price-top-right">
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="product-price-top-left">
-                                    <span>101.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product col-3">
-                        <div class="product-img">
-                            <img src="./images/all/home/2-2.png" alt="">
-                        </div>
-                        <div class="product-content">
-                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
-                        </div>
-                        <div class="product-price">
-                            <div class="product-price-top n-row">
-                                <div class="product-price-top-right">
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="product-price-top-left">
-                                    <span>101.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product col-3">
-                        <div class="product-img">
-                            <img src="./images/all/home/2-3.png" alt="">
-                        </div>
-                        <div class="product-content">
-                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
-                        </div>
-                        <div class="product-price">
-                            <div class="product-price-top n-row">
-                                <div class="product-price-top-right">
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="product-price-top-left">
-                                    <span>101.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product col-3">
-                        <div class="product-img">
-                            <img src="./images/all/home/2-0.png" alt="">
-                        </div>
-                        <div class="product-content">
-                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
-                        </div>
-                        <div class="product-price">
-                            <div class="product-price-top n-row">
-                                <div class="product-price-top-right">
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="product-price-top-left">
-                                    <span>101.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end collection -->
-        <!-- banner 2 -->
-        <div class="banner banner2">
-            <a href=""><img src="./images/banner1.png"  alt=""></a>
-        </div>
-        <!-- end banner 2 -->
-        <!-- discover -->
-        <div class="session-common discover">
-            <div class="header-discover">
-                <a href="#" class="n-btn-common">
-                    Khám phá
-                </a>
-            </div>
-            <div class="box-content">
-                <div class="n-row">
-                    <div class="box-product col-3">
-                        <div class="product-img">
-                            <img src="./images/all/home/3-0.png" alt="">
-                        </div>
-                        <div class="product-content">
-                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
-                        </div>
-                        <div class="product-price">
-                            <div class="product-price-top n-row">
-                                <div class="product-price-top-right">
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="product-price-top-left">
-                                    <span>101.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product col-3">
-                        <div class="product-img">
-                            <img src="./images/all/home/3-1.png" alt="">
-                        </div>
-                        <div class="product-content">
-                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
-                        </div>
-                        <div class="product-price">
-                            <div class="product-price-top n-row">
-                                <!-- <div class="product-price-top-right">
-                                    <del>300.000đ</del>
-                                </div> -->
-                                <div class="product-price-top-left">
-                                    <span>101.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product col-3">
-                        <div class="product-img">
-                            <img src="./images/all/home/3-2.png" alt="">
-                        </div>
-                        <div class="product-content">
-                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
-                        </div>
-                        <div class="product-price">
-                            <div class="product-price-top n-row">
-                                <div class="product-price-top-right">
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="product-price-top-left">
-                                    <span>10.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-product col-3">
-                        <div class="product-img">
-                            <img src="./images/all/home/3-3.png" alt="">
-                        </div>
-                        <div class="product-content">
-                            ÁO NỈ MŨ PHỐI OP ART BOOLAAB
-                        </div>
-                        <div class="product-price">
-                            <div class="product-price-top n-row">
-                                <div class="product-price-top-right">
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="product-price-top-left">
-                                    <span>101.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end discover -->
-        <!-- jean -->
-        <div class="jean">
-            <div class="n-row">
-                <div class="">
-                    <div class="box-img">
-                        <img src="./images/product/quan-jeans-f654r-1 1.png" alt="">
-                    </div>
-                </div>
-                <div class="">
-                    <div class="box-content">
-                        <div class="content-header">
-                            <p>Swan's jeans</p>
-                        </div>
-                        <div class="content-body">
-                            <p>
-                                Quần Jeans nhà Swan được sử dụng chất liệu là Cotton Tái sinh (Regenerative Cotton) -
-                                loại Cotton chất lượng và trồng bằng quy trình sạch, bền vững. Chiếc quần với vải Denim
-                                được dệt toàn bộ tại nhà máy Nhơn Trạch, Đồng Nai của Saitex - nhà máy với nhiều trang
-                                máy móc, thiết bị hiện đại với quy trình sản xuất khép kín, giảm thiểu CO2 và nước thải
-                                ra môi trường.
-                            </p>
-                        </div>
-                        <div>
-                            <a href="#" class="n-btn-common">
-                                Tìm hiểu thêm
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end jean -->
-        <!-- category -->
-        <div class="category">
-            <div class="n-row">
-                <div class="col-4 category-item">
-                    <div class="box-img">
-                        <img src="./images/product/ao-polo-jylme-2.jpg" alt="">
-                        <a href="#" class="btn-category n-btn-common">
-                            Hàng mới
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4 category-item">
-                    <div class="box-img">
-                        <img src="./images/product/balo-in-pattern-aa-boolaab-uhnyc-1.jpg" alt="">
-                        <a href="#" class="btn-category n-btn-common">
-                            Phụ kiện
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4 category-item">
-                    <div class="box-img">
-                        <img src="./images/product/ao-so-tqt0x-1.jpg" alt="">
-                        <a href="#" class="btn-category n-btn-common">
-                            Tất cả
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end category -->
+
+        <!-- footer -->
         <div class="footer">
             <div class="footer-content">
                 <div class="n-row">
@@ -403,7 +432,8 @@
                         <div class="footer-header">
                             <p class="footer-header-title">Swan Luôn lắng nghe bạn !</p>
                             <p class="footer-header-content">
-                                Chúng tôi luôn trân trọng và lắng nghe mọi ý kiến của bạn góp ý để cải thiện chất lượng và dịch vụ một ngày tốt hơn!
+                                Chúng tôi luôn trân trọng và lắng nghe mọi ý kiến của bạn góp ý để cải thiện chất lượng
+                                và dịch vụ một ngày tốt hơn!
                             </p>
                         </div>
                         <div class="icons n-row">
@@ -472,6 +502,8 @@
     <script src="./common/bootstrap/js/popper.min.js"></script>
     <script src="./common/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./common/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./common/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="./js/script.js"></script>
     <script src="./js/trangchu.js"></script>
 </body>
