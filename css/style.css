@@ -25,7 +25,9 @@ ul {
     display: flex;
     flex-wrap: wrap;
 }
-
+.d-flex{
+    display: flex;
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -68,8 +70,14 @@ ul {
 .pt-10{
     padding-top: 10px;
 }
+.pl-15{
+    padding-left: 15px;
+}
 .pl-20{
     padding-left: 20px;
+}
+.pr-15{
+    padding-right: 15px;
 }
 .bg-red{
     background-color: red!important;
@@ -79,7 +87,9 @@ ul {
 }
 .bg-light-gray{
     background-color: #EDE1C9!important;
-
+}
+.bg-purple{
+    background: #907D9E!important;
 }
 /*  btn */
 .n-btn-common{
@@ -136,8 +146,8 @@ ul {
     padding: 10px 20px;
     margin-right: 15px;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 16px;
     background-color: #fff;
     border: 1px solid #111;
     color: #111;
@@ -189,16 +199,37 @@ ul {
 .text-center{
     text-align: center;
 }
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
 .n-d-none{
     display: none;
 }
+/* form input */
 .search-container {
     width: 500px;
     height: 45px;
     margin-top: 20px;
     display: block;
 }
-
+.form-group {
+    margin-bottom: 20px;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 input#search-bar {
     width: 100%;
     height: 45px;
@@ -247,6 +278,7 @@ input#search-bar:focus:-ms-placeholder {
     margin: 10px; 
     display: block;
 }
+
 /* header */
 .header {
     display: flex;
