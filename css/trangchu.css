@@ -333,9 +333,7 @@
     width: 100%;
     height: 788px;
 }
-#contact .footer{
-    margin-top: 0;
-}
+
 .contact-detail-main {
     color:#fff;
     padding-top: 174px;
@@ -613,7 +611,16 @@ border: 1px solid #000000;
     position: absolute;
     bottom: 4px;
 }
-.main-cart .form-total-cost .total-header{
-    
-}
 /* end cart */
+
+
+/* login.html */
+
+.main-sign{
+    width: 900px;
+    margin: 0 auto;
+}
+.text-align-center{
+    display: flex;
+    align-items: center;
+}

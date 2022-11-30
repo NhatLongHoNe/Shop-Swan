@@ -88,8 +88,14 @@ ul {
 .bg-light-gray{
     background-color: #EDE1C9!important;
 }
+.bg-gray{
+    background: #D9D9D9!important;
+    font-weight: 500;
+}
 .bg-purple{
     background: #907D9E!important;
+
+color: #000000;
 }
 /*  btn */
 .n-btn-common{
