@@ -76,6 +76,9 @@ ul {
 .pl-20{
     padding-left: 20px;
 }
+.pl-30{
+    padding-left: 30px;
+}
 .pr-15{
     padding-right: 15px;
 }
@@ -409,4 +412,95 @@ input#search-bar:focus:-ms-placeholder {
     width: 1400px;
     margin: 0 auto;
     line-height: 53px;
+}
+.nav-admin .nav-bar{
+    justify-content: space-around !important;
+}
+.nav-bar a{
+    color: #fff;
+    display: block;
+}
+/* list-group */
+.list-group {
+    max-width: 400px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.list-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.list-group-item.active {
+    z-index: 2;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.list-group-item+.list-group-item {
+    border-top-width: 0;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+/* end list-group */
+
+/* table */
+.border-top-0{
+    border-top:0px !important;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.table tr {
+    border: 1px solid #dee2e6;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6;
+
+}
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    text-align: start;
+}
+/* pagination */
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.page-item:first-child .page-link {
+    margin-left: 0;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #000;
 }

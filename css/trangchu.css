@@ -177,7 +177,7 @@
     margin: 0 auto;
     text-align: center;
 }
-.daily-news{
+.daily-news,.revenue{
     max-width: 1400px;
     margin: 40px auto 0 auto;
 }
