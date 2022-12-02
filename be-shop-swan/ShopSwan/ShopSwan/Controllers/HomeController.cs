@@ -125,7 +125,10 @@ namespace ShopSwan.Controllers
             {
                 var Users = JsonConvert.DeserializeObject<List<UserModel>>(jsons);
 
-                var data = Users.Where(x => x.Email.ToLower()==(user.Email.ToLower()) && x.Password.ToLower()==(user.Password.ToLower())).FirstOrDefault();
+                var data = Users.FirstOrDefault(x => x.Email == user.Email && x.Password == user.Password);
+
+
+                    //Users.Where(x => x.Email.ToLower()==(user.Email.ToLower()) && x.Password.ToLower()==(user.Password.ToLower())).FirstOrDefault();
                 if (data != null)
                 {
                     var json = JsonConvert.SerializeObject(data);

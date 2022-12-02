@@ -29,10 +29,10 @@
                                 <input type="text" class="form-control" id="email" placeholder="EMAIL/SĐT">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="password" placeholder="Mật khẩu">
+                                <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
                             </div>
                             <div class="form-group">
-                                <a class="btn-black text-center" id="btn-login">ĐĂNG NHẬP</a>
+                                <a class="btn-black text-center" id="btn-login-cart">ĐĂNG NHẬP</a>
                             </div>
                             <div class="form-group  text-center">
                                 <a href="#" class="btn-forgot">Quên mật khẩu</a>
@@ -52,16 +52,16 @@
                                 <input type="text" class="form-control" id="phone" placeholder="Số điện thoại">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="email" placeholder="Email">
+                                <input type="text" class="form-control" id="email1" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="password" placeholder="Mật khẩu">
+                                <input type="password" class="form-control" id="password1" placeholder="Mật khẩu">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="rePassword" placeholder="Nhập lại mật khẩu">
+                                <input type="password" class="form-control" id="rePassword" placeholder="Nhập lại mật khẩu">
                             </div>
                             <div class="form-group">
-                                <a class="btn-black text-center" id="btn-register">Đăng ký</a>
+                                <a class="btn-black text-center" id="btn-register-cart">Đăng ký</a>
                             </div>
                         </div>
                         <!-- form-register -->
@@ -253,7 +253,7 @@
                                 </p>
                             </div>
                             <div class="form-group mt-20">
-                                <a class="btn-black text-center">Thanh Toán</a>
+                                <a class="btn-black text-center" href="#modal-option-1" >Thanh Toán</a>
                             </div>
                         </div>
                     </div>
@@ -420,4 +420,31 @@
 
         </div>
     </div>
+</div><div class="modals">
+    <dialog class="dialog" id="modal-option-1">
+        <div class="dialog__wrapper">
+            @*<button class="dialog__close">✕</button>*@
+            <div class="box-notification text-center">
+                <div class="box-header">
+                    <h3>BẠN ĐÃ THANH TOÁN THÀNH CÔNG</h3>
+                </div>
+                <div class="box-content mt-20">
+                    <a href="/home/PersionalBillDetail">theo dõi đơn hàng của mình <u>tại đây</u> nhé!</a>
+                </div>
+            </div>
+
+        </div>
+    </dialog>
+    @*<dialog class="dialog" id="modal-option-2">
+        <div class="dialog__wrapper">
+            <button class="dialog__close">✕</button>
+            Modal 2
+        </div>
+    </dialog>
+    <dialog class="dialog" id="modal-option-3">
+        <div class="dialog__wrapper">
+            <button class="dialog__close">✕</button>
+            Modal 3
+        </div>
+    </dialog>*@
 </div>

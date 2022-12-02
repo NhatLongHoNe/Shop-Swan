@@ -27,3 +27,7 @@ $('.slider-for').slick({
     fade: false,
     cssEase: 'linear'
   });
+
+
+
+
