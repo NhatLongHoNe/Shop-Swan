@@ -7,7 +7,11 @@
 }
 @{
     var ssUser = Context.Session.GetString("User");
-    UserModel data = JsonConvert.DeserializeObject<UserModel>(ssUser) as UserModel;
+    UserModel data = new UserModel();
+    if (ssUser != null)
+    {
+        data = JsonConvert.DeserializeObject<UserModel>(ssUser) as UserModel;
+    }
 }
     <div class="main-cart">
             <div class="d-flex">
@@ -18,10 +22,10 @@
                                 <h2>Nguyễn Phương Thanh</h2>
                             </div>
                             <div class="form-group">
-                                <a class="btn-black text-center">Thông tin cá nhân</a>
+                                <a href="/home/persional" class="btn-black text-center">Thông tin cá nhân</a>
                             </div>
                             <div class="form-group">
-                                <a class="btn-white text-center">Danh sách đơn hàng</a>
+                                <a href="/home/PersionalBill" class="btn-white text-center">Danh sách đơn hàng</a>
                             </div>
                             <div class="form-group">
                                 <a class="btn-white text-center" id="btn-log-out">Đăng xuất</a>

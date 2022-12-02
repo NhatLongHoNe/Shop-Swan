@@ -1,28 +1,36 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+
+@{
+    var ssUser = Context.Session.GetString("User");
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ShopSwan</title>
-@*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />*@
+    @*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />*@
     <link rel="stylesheet" type="text/css" href="~/common/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="~/common/slick/slick-theme.css">
-    <link rel="stylesheet" href="~/css/style.css"/>
-    <link rel="stylesheet" href="~/css/trangchu.css"/>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/trangchu.css" />
 </head>
 <body>
-      <div class="main">
+    <div class="main">
         <!-- header -->
         <div class="header">
             <div class="logo">
-                <a href="/"><img class="mt-20"src="~/images/logo.png" alt=""></a>
+                <a href="/"><img class="mt-20" src="~/images/logo.png" alt=""></a>
             </div>
             <div class="search">
                 <form class="search-container">
                     <input type="text" id="search-bar" placeholder="Tìm kiếm">
-                    <a href="#"><img class="search-icon"
-                            src="~/images/search-icon.png"></a>
+                    <a href="#">
+                        <img class="search-icon"
+                             src="~/images/search-icon.png">
+                    </a>
                 </form>
             </div>
             <div class="header-right">
@@ -31,36 +39,42 @@
                         <img src="~/images/icon/card.png" alt="">
                     </a>
                 </div>
-                <div class="box-icon n-d-none">
-                    <a href="/home/persional" class="user">
-                        <img src="~/images/icon/user.png" alt="">
-                    </a>
-                </div>
-                <div class="box-icon mr-0 n-d-none">
-                    <a href="#" class="ring">
-                        <img src="~/images/icon/ring.png" alt="">
-                    </a>
-                </div>
-                <div class="box-btn">
-                    <a href="/home/login" class="btn-white">Đăng nhập</a>
-                </div>
-                <div class="box-btn mr-0">
-                    <a href="/home/register" class="btn-black">Đăng ký</a>
-                </div>
+                @if (ssUser == null)
+                {
+                    <div class="box-btn">
+                        <a href="/home/login" class="btn-white">Đăng nhập</a>
+                    </div>
+                    <div class="box-btn mr-0">
+                        <a href="/home/register" class="btn-black">Đăng ký</a>
+                    </div>
+                }
+                else
+                {
+                    <div class="box-icon">
+                        <a href="/home/persional" class="user">
+                            <img src="~/images/icon/user.png" alt="">
+                        </a>
+                    </div>
+                    <div class="box-icon mr-0">
+                        <a href="#" class="ring">
+                            <img src="~/images/icon/ring.png" alt="">
+                        </a>
+                    </div>
+                }
             </div>
         </div>
         <!-- end header -->
-          <div class="nav mt-40 nav-admin">
-            <div >
+        <div class="nav mt-40 nav-admin">
+            <div>
                 <ul class="nav-bar">
                     <li><a href="/admin/Revenue">DOANH THU</a></li>
                     <li><a href="/admin/Manage">QUẢN LÍ ĐƠN HÀNG</a></li>
                 </ul>
             </div>
         </div>
-       
-       
-            @RenderBody()
+
+
+        @RenderBody()
 
 
         <!-- end category -->

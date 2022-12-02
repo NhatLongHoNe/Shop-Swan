@@ -10,6 +10,19 @@
     $("#btn-log-out").click(function () {
         LogOut();
     })
+
+    $('#btn-hide-login').click(function () {
+        $('#cart-login').addClass("n-d-none");
+        $('#cart-register').removeClass("n-d-none");
+        $('#btn-dangnhap-cart').removeClass("n-d-none");
+    })
+
+    $('#btn-hide-register').click(function () {
+        $('#cart-register').addClass("n-d-none");
+        $('#cart-login').removeClass("n-d-none");
+        $('#btn-dangnhap-cart').addClass("n-d-none");
+
+    })
     function Register() {
         //debugger;
 
