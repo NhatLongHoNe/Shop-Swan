@@ -1,0 +1,161 @@
+﻿
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+
+@{
+    ViewData["Title"] = "Persional";
+}
+@{
+    var ssUser = Context.Session.GetString("User");
+    UserModel data = JsonConvert.DeserializeObject<UserModel>(ssUser) as UserModel;
+}
+    <div class="main-cart">
+            <div class="d-flex">
+                <div class="col-4">
+                    <div class="form-common">
+                        <div class="form-login">
+                            <div class="form-group">
+                                <h2>Nguyễn Phương Thanh</h2>
+                            </div>
+                            <div class="form-group">
+                                <a class="btn-black text-center">Thông tin cá nhân</a>
+                            </div>
+                            <div class="form-group">
+                                <a class="btn-white text-center">Danh sách đơn hàng</a>
+                            </div>
+                            <div class="form-group">
+                                <a class="btn-white text-center" id="btn-log-out">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="form-common-left">
+                        <div class="form-cart">
+                            <div class="form-group">
+                                <h2>Thông tin tài khoản</h2>
+                            </div>
+                            <div class="form-group">
+                                <div class="n-row">
+                                    <div class="col-3">
+                                        <p>Họ tên</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" placeholder="Nhập họ tên" value="@data.Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="n-row">
+                                    <div class="col-3">
+                                        <p>Email</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" placeholder="Nhập Email" value="@data.Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="n-row">
+                                    <div class="col-3">
+                                        <p>Số điện thoại</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" placeholder="Nhập số điện thoại"  value="@data.Phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="n-row">
+                                    <div class="col-3">
+                                        <p>Địa chỉ</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" placeholder="Nhập địa chỉ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="n-row">
+                                    <div class="col-3">
+                                        <p>Tỉnh/Thành</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="n-row">
+                                            <div class="col-4">
+                                                <div class="pr-15">
+                                                    <select name="" class="form-control" id=""
+                                                        placeholder="Chọn tỉnh thành">
+                                                        <option value="">Chọn Tỉnh/Thành</option>
+                                                        <option value="">Hà Nội</option>
+                                                        <option value="">Nam Định</option>
+                                                        <option value="">Khánh Hòa</option>
+                                                        <option value="">Thanh Hóa</option>
+                                                        <option value="">Hưng Yên</option>
+                                                        <option value="">Hải Phòng</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="pr-15">
+                                                    <select name="" class="form-control" id=""
+                                                        placeholder="Chọn tỉnh thành">
+                                                        <option value="">Chọn Quận/Huyện</option>
+                                                        <option value="">Thanh Xuân</option>
+                                                        <option value="">Hà Đông</option>
+                                                        <option value="">Quốc Oai</option>
+                                                        <option value="">Kim Động</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="">
+                                                    <select name="" class="form-control" id=""
+                                                        placeholder="Chọn tỉnh thành">
+                                                        <option value="">Chọn Phường/Xã</option>
+                                                        <option value="">Toàn Thắng</option>
+                                                        <option value="">Cự Khê</option>
+                                                        <option value="">Nghĩa Dân</option>
+                                                        <option value="">Văn Giang</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="n-row">
+                                    <div class="col-3">
+                                        <p>Giới tính</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="n-row">
+                                            <div class="col-3">
+                                                <label for="men">
+                                                    <input type="radio" name="gender" id="men" class="mr-15"> Nam
+                                                </label>
+                                            </div>
+                                            <div class="col-3">
+                                                <label for="woman">
+                                                    <input type="radio" name="gender" id="woman" class="mr-15"> Nữ
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <a href=""><u>Thay đổi mật khẩu</u></a>
+                            </div>
+                            <div class="form-group">
+                                <div class="btn-black" style="display:inline-block;">
+                                    CẬP NHẬT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>

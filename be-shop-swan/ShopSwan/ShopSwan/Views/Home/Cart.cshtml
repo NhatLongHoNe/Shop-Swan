@@ -1,0 +1,403 @@
+﻿
+@{
+    ViewData["Title"] = "Cart";
+}
+
+ <div class="main-cart">
+            <div class="d-flex">
+                <div class="col-6">
+                    <div class="form-common">
+                        <div class="n-d-none">
+                            <!-- form-login -->
+                            <div class="form-login n-d-none">
+                                <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+                                <div class="form-group mt-20">
+                                    <input type="text" class="form-control" placeholder="EMAIL/SĐT">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Mật khẩu">
+                                </div>
+                                <div class="form-group">
+                                    <a class="btn-black text-center">ĐĂNG NHẬP</a>
+                                </div>
+                                <div class="form-group  text-center">
+                                    <a href="#" class="btn-forgot">Quên mật khẩu</a>
+                                </div>
+                                <div class="form-group text-center">
+                                    <a href="#" class="btn-register">Bạn chưa có tài khoản ? <u>ĐĂNG KÝ</u></a>
+                                </div>
+                            </div>
+                            <!-- end form-login -->
+
+                            <!-- form-register -->
+                            <div class="form-register">
+                                <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+                                <div class="form-group mt-20">
+                                    <input type="text" class="form-control" placeholder="Tên của bạn">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Mật khẩu">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nhập lại mật khẩu">
+                                </div>
+                                <div class="form-group">
+                                    <a class="btn-black text-center">Đăng ký</a>
+                                </div>
+                            </div>
+                            <!-- form-register -->
+
+                            <div class="form-group text-center">
+                                <div class="line-black">
+                                    <span class="line-text">Hoặc</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-control">
+                                    <div class="sign-google">
+                                        <div class="box-img">
+                                            <img style="width: 24px" src="~/images/icon/google.png" alt="">
+                                        </div>
+                                        <div class="box-content">
+                                            <p>Đăng nhập bằng Google</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-control">
+                                    <div class="sign-google">
+                                        <div class="box-img">
+                                            <img style="width: 24px" src="~/images/icon/fb.png" alt="">
+                                        </div>
+                                        <div class="box-content">
+                                            <p>Đăng nhập bằng Facebook</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-register text-center">
+                                <a href="#"><u>ĐĂNG NHẬP</u></a>
+                            </div>
+                        </div>
+
+                        <!-- form thông tin vận chuyển và hình thức thanh toán -->
+                        <div>
+                            <div class="form-address">
+                                <h2>THÔNG TIN VẬN CHUYỂN</h2>
+                                <div class="form-group mt-20">
+                                    <div class="n-row">
+                                        <div class="col-7">
+                                            <div class="pr-15">
+                                                <input type="text" class="form-control" placeholder="Họ tên">
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <input type="text" class="form-control" placeholder="Số điện thoại">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control"
+                                        placeholder="Địa chỉ (Vd: 120 Quang Trung, Hà Đông)">
+                                </div>
+                                <div class="form-group">
+                                    <div class="n-row">
+                                        <div class="col-4">
+                                            <div class="pr-15">
+                                                <select name="" class="form-control" id=""
+                                                    placeholder="Chọn tỉnh thành">
+                                                    <option value="">Chọn Tỉnh/Thành</option>
+                                                    <option value="">Hà Nội</option>
+                                                    <option value="">Nam Định</option>
+                                                    <option value="">Khánh Hòa</option>
+                                                    <option value="">Thanh Hóa</option>
+                                                    <option value="">Hưng Yên</option>
+                                                    <option value="">Hải Phòng</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="pr-15">
+                                                <select name="" class="form-control" id=""
+                                                    placeholder="Chọn tỉnh thành">
+                                                    <option value="">Chọn Quận/Huyện</option>
+                                                    <option value="">Thanh Xuân</option>
+                                                    <option value="">Hà Đông</option>
+                                                    <option value="">Quốc Oai</option>
+                                                    <option value="">Kim Động</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="">
+                                                <select name="" class="form-control" id=""
+                                                    placeholder="Chọn tỉnh thành">
+                                                    <option value="">Chọn Phường/Xã</option>
+                                                    <option value="">Toàn Thắng</option>
+                                                    <option value="">Cự Khê</option>
+                                                    <option value="">Nghĩa Dân</option>
+                                                    <option value="">Văn Giang</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control"
+                                        placeholder="Ghi chú thêm (Vd: Giao giờ hành chính)">
+                                </div>
+                            </div>
+
+                            <div class="form-payment">
+                                <h2>HÌNH THỨC THANH TOÁN</h2>
+                                <div class="form-control mt-20">
+                                    <div class="n-row">
+                                        <div class="col-1">
+                                            <div class=" text-center">
+                                                <input type="radio" name="pay">
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <img style="width: 24px;" src="~/images/icon/transport.png" alt="">
+                                        </div>
+                                        <div class="col-6">
+                                            COD
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-control mt-20">
+                                    <div class="n-row">
+                                        <div class="col-1">
+                                            <div class=" text-center">
+                                                <input type="radio" name="pay">
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <img style="width: 24px;" src="~/images/icon/momo.png" alt="">
+                                        </div>
+                                        <div class="col-6">
+                                            THANH TOÁN MOMO
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-control mt-20">
+                                    <div class="n-row">
+                                        <div class="col-1">
+                                            <div class=" text-center">
+                                                <input type="radio" name="pay">
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <img style="width: 24px;" src="~/images/icon/zalo.png" alt="">
+                                        </div>
+                                        <div class="col-6">
+                                            VÍ ĐIỆN TỬ ZALOPAY
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-control mt-20">
+                                    <div class="n-row">
+                                        <div class="col-1">
+                                            <div class=" text-center">
+                                                <input type="radio" name="pay">
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <img style="width: 24px;" src="~/images/icon/shopee.png" alt="">
+                                        </div>
+                                        <div class="col-6">
+                                            VÍ ĐIỆN TỬ SHOPPE PAY
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-control mt-20">
+                                    <div class="n-row">
+                                        <div class="col-1">
+                                            <div class=" text-center">
+                                                <input type="radio" name="pay">
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            THANH TOÁN BẰNG THẺ ATM/INTERNET BANKING
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-20">
+                                    <p class="text-center">
+                                        Nếu bạn không hài lòng với sản phẩm của chúng tôi? <br>
+                                        Bạn hoàn toàn có thể trả lại sản phẩm. <br>
+                                        <a href="#"><u>Tìm hiểu thêm tại đây.</u></a> <br>
+                                    </p>
+                                </div>
+                                <div class="form-group mt-20">
+                                    <a class="btn-black text-center">Thanh Toán</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-common-left">
+                        <div class="form-cart">
+                            <h2>THÔNG TIN VẬN CHUYỂN</h2>
+                            <div class="form-group mt-20 ">
+                                <div class="product-item">
+                                    <div class="n-row">
+                                        <div class="col-4">
+                                            <div class="pr-15 mr-20">
+                                                <img src="~/images/all/cart/1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-8 box">
+                                            <div class="box-header">
+                                                <h3>ÁO NỈ MŨ TRÁI TIM</h3>
+                                            </div>
+                                            <div class="box-main">
+                                                <div class="n-row">
+                                                    <div class="col-7 d-flex">
+                                                        <a href="#" class="btn-color bg-light-gray"></a>
+                                                        <a href="#" class="btn-size"> L</a>
+                                                    </div>
+                                                    <div class="col-5 text-right">
+                                                        <img src="~/images/icon/Recycle-bin.png" style="width: 24px;"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="n-row mt-20">
+                                                    <div class="col-6 box-amount">
+                                                        <div class="box-input-amount d-flex ">
+                                                            <div class="input-amount-left"> - </div>
+                                                            <div>
+                                                                <input type="text" id="txtAmount"
+                                                                    class="n-input input-amount" value="1">
+                                                            </div>
+                                                            <div class="input-amount-right"> + </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <p>199.000đ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item mt-20">
+                                    <div class="n-row">
+                                        <div class="col-4">
+                                            <div class="pr-15 mr-20">
+                                                <img src="~/images/all/cart/1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-8 box">
+                                            <div class="box-header">
+                                                <h3>ÁO NỈ MŨ TRÁI TIM</h3>
+                                            </div>
+                                            <div class="box-main">
+                                                <div class="n-row">
+                                                    <div class="col-7 d-flex">
+                                                        <a href="#" class="btn-color bg-purple"></a>
+                                                        <a href="#" class="btn-size"> L</a>
+                                                    </div>
+                                                    <div class="col-5 text-right">
+                                                        <img src="~/images/icon/Recycle-bin.png" style="width: 24px;"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="n-row mt-20">
+                                                    <div class="col-6 box-amount">
+                                                        <div class="box-input-amount d-flex ">
+                                                            <div class="input-amount-left"> - </div>
+                                                            <div>
+                                                                <input type="text" id="txtAmount"
+                                                                    class="n-input input-amount" value="1">
+                                                            </div>
+                                                            <div class="input-amount-right"> + </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <p>199.000đ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-discount mt-40">
+                            <img src="~/images/all/cart/tiket.png" alt="">
+                        </div>
+                        <div class="form-total-cost mt-40">
+                            <div class="total-header">
+                                <div class="n-row">
+                                    <div class="col-8">
+                                        <p class="btn-white bg-gray">
+                                            CHAOBAN
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="btn-black">
+                                            ÁP DỤNG
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-cost mt-40">
+                                <div class="n-row">
+                                    <div class="col-12">
+                                        <i>MÃ GIẢM GIÁ ĐÃ ĐƯỢC ÁP DỤNG</i>
+                                    </div>
+                                </div>
+                                <div class="n-row mt-20">
+                                    <div class="col-12">
+                                        <i>XOÁ MÃ GIẢM GIÁ </i>
+                                    </div>
+                                </div>
+                                <div class="n-row mt-20">
+                                    <div class="col-6">
+                                        <p>Tạm tính</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-right">408.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="n-row mt-20">
+                                    <div class="col-6">
+                                        <p>Giảm giá</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-right">-100.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="n-row mt-20">
+                                    <div class="col-6">
+                                        <p>Phí giao hàng</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-right">35.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="line-black mt-20"></div>
+                                <div class="n-row mt-20">
+                                    <div class="col-6">
+                                        <p>Tổng</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="text-right">343.000đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
