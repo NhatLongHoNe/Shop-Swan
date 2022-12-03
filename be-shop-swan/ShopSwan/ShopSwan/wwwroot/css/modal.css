@@ -14,7 +14,10 @@
     background: transparent;
     margin: auto;
 }
-
+.dialog-1 {
+    border: 0;
+    background: transparent;
+}
     .dialog::backdrop {
         background-color: rgba(0,0,0,.3);
         backdrop-filter: blur(4px);
@@ -46,3 +49,18 @@
     --webkit-appearance: none;
     appearance: none;
 }
+
+.main{
+    position:relative;
+}
+#modal-option-2 {
+    position: absolute;
+    left: unset;
+    height:100vh;
+}
+.modal-layout .dialog__wrapper1 {
+    height: 100%;
+    min-width:660px;
+    padding:40px 60px!important;
+}
+ 
