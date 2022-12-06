@@ -13,13 +13,6 @@ namespace ShopSwan.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
             return View();
@@ -124,7 +117,7 @@ namespace ShopSwan.Controllers
             if (jsons !=null)
             {
                 var Users = JsonConvert.DeserializeObject<List<UserModel>>(jsons);
-
+                // tìm kiếm xem thằng user mới nhập vào có trong danh sách đăng ký hay không
                 var data = Users.FirstOrDefault(x => x.Email == user.Email && x.Password == user.Password);
 
 
@@ -147,10 +140,5 @@ namespace ShopSwan.Controllers
             return Json(true);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }
