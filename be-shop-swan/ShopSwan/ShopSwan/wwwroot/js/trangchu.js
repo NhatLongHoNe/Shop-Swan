@@ -18,8 +18,38 @@
         Login1();
     })
 
+    $("#add-to-cart").click(function () {
+        toastr["success"]("Đã thêm vào giỏ hàng thành công");
+    })
 
+    $(".btn-color").click(function () {
+        $(".btn-color").removeClass("active")
+        $(this).addClass("active");
+    });
+    $(".btn-size").click(function () {
+        $(".btn-size").removeClass("active")
+        $(this).addClass("active");
+    });
 
+    $(".input-amount-right").click(function () {
+        var x = eval($('#txtAmount').val()) + 1;
+        $('#txtAmount').val(x)
+    });
+    $(".input-amount-left").click(function () {
+        var x = eval($('#txtAmount').val()) - 1;
+        if (x > 0) {
+            $('#txtAmount').val(x);
+        }
+    });
+    $('.btn-pay').click(function () {
+        if ($(this).val() == 1) {
+            $('#modal-1').addClass('n-d-none');
+            $('#modal-2').removeClass('n-d-none');
+        } else {
+            $('#modal-2').addClass('n-d-none');
+            $('#modal-1').removeClass('n-d-none');
+        }
+    })
     $('#btn-hide-login').click(function () {
         $('#cart-login').addClass("n-d-none");
         $('#cart-register').removeClass("n-d-none");

@@ -177,7 +177,7 @@
                                 <div class="n-row">
                                     <div class="col-1">
                                         <div class=" text-center">
-                                            <input type="radio" name="pay">
+                                            <input type="radio" name="pay" class="btn-pay">
                                         </div>
                                     </div>
                                     <div class="col-1">
@@ -192,7 +192,7 @@
                                 <div class="n-row">
                                     <div class="col-1">
                                         <div class=" text-center">
-                                            <input type="radio" name="pay">
+                                            <input type="radio" name="pay" class="btn-pay" value="1">
                                         </div>
                                     </div>
                                     <div class="col-1">
@@ -207,7 +207,7 @@
                                 <div class="n-row">
                                     <div class="col-1">
                                         <div class=" text-center">
-                                            <input type="radio" name="pay">
+                                            <input type="radio" name="pay" class="btn-pay">
                                         </div>
                                     </div>
                                     <div class="col-1">
@@ -222,7 +222,7 @@
                                 <div class="n-row">
                                     <div class="col-1">
                                         <div class=" text-center">
-                                            <input type="radio" name="pay">
+                                            <input type="radio" name="pay" class="btn-pay">
                                         </div>
                                     </div>
                                     <div class="col-1">
@@ -237,7 +237,7 @@
                                 <div class="n-row">
                                     <div class="col-1">
                                         <div class=" text-center">
-                                            <input type="radio" name="pay">
+                                            <input type="radio" name="pay" class="btn-pay">
                                         </div>
                                     </div>
                                     <div class="col-8">
@@ -253,7 +253,9 @@
                                 </p>
                             </div>
                             <div class="form-group mt-20">
-                                <a class="btn-black text-center" href="#modal-option-1" >Thanh Toán</a>
+                                <a class="btn-black text-center" id="modal-1" href="#modal-option-1">Thanh Toán</a>
+
+                                <a class="btn-black text-center n-d-none" id="modal-2" href="#modal-option-3">Thanh Toán</a>
                             </div>
                         </div>
                     </div>
@@ -270,12 +272,12 @@
                     <div class="form-group mt-20 ">
                         <div class="product-item">
                             <div class="n-row">
-                                <div class="col-4">
-                                    <div class="pr-15 mr-20">
-                                        <img src="~/images/all/cart/1.png" alt="">
+                                <div class="col-3">
+                                    <div class="">
+                                        <img  style="width:auto;" src="~/images/cart-img.png" alt="">
                                     </div>
                                 </div>
-                                <div class="col-8 box">
+                                <div class="col-9 box">
                                     <div class="box-header">
                                         <h3>ÁO NỈ MŨ TRÁI TIM</h3>
                                     </div>
@@ -311,12 +313,12 @@
                         </div>
                         <div class="product-item mt-20">
                             <div class="n-row">
-                                <div class="col-4">
-                                    <div class="pr-15 mr-20">
-                                        <img src="~/images/all/cart/1.png" alt="">
+                                <div class="col-3">
+                                    <div class="">
+                                        <img style="width:auto;" src="~/images/cart-img1.png" alt="">
                                     </div>
                                 </div>
-                                <div class="col-8 box">
+                                <div class="col-9 box">
                                     <div class="box-header">
                                         <h3>ÁO NỈ MŨ TRÁI TIM</h3>
                                     </div>
@@ -442,11 +444,11 @@
             <button class="dialog__close">✕</button>
             Modal 2
         </div>
-    </dialog>
-    <dialog class="dialog" id="modal-option-3">
-        <div class="dialog__wrapper">
-            <button class="dialog__close">✕</button>
-            Modal 3
-        </div>
     </dialog>*@
+    <dialog class="dialog" id="modal-option-3">
+        <div class="dialog__wrapper text-center">
+            <button class="dialog__close">✕</button>
+            <img class="text-center" style="width :70%" src="~/images/payment-by-momo.png" alt="Alternate Text" />
+        </div>
+    </dialog>
 </div>

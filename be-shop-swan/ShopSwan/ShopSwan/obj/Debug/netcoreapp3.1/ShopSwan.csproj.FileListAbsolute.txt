@@ -1234,3 +1234,7 @@ C:\Users\nhathl\Desktop\Shop-Swan\be-shop-swan\ShopSwan\ShopSwan\obj\Debug\netco
 C:\Users\nhathl\Desktop\Shop-Swan\be-shop-swan\ShopSwan\ShopSwan\obj\Debug\netcoreapp3.1\ShopSwan.dll
 C:\Users\nhathl\Desktop\Shop-Swan\be-shop-swan\ShopSwan\ShopSwan\obj\Debug\netcoreapp3.1\ShopSwan.pdb
 C:\Users\nhathl\Desktop\Shop-Swan\be-shop-swan\ShopSwan\ShopSwan\obj\Debug\netcoreapp3.1\ShopSwan.genruntimeconfig.cache
+E:\code\Shop-Swan\be-shop-swan\ShopSwan\ShopSwan\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Category.cshtml.g.cs
+E:\code\Shop-Swan\be-shop-swan\ShopSwan\ShopSwan\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Cancel.cshtml.g.cs
+E:\code\Shop-Swan\be-shop-swan\ShopSwan\ShopSwan\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Confirm.cshtml.g.cs
+E:\code\Shop-Swan\be-shop-swan\ShopSwan\ShopSwan\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Create.cshtml.g.cs

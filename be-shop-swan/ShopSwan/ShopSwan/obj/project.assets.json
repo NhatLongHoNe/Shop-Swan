@@ -6196,19 +6196,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nhathl\\.nuget\\packages\\": {}
+    "C:\\Users\\Nhat-Ne\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nhathl\\Desktop\\Shop-Swan\\be-shop-swan\\ShopSwan\\ShopSwan\\ShopSwan.csproj",
+      "projectUniqueName": "E:\\code\\Shop-Swan\\be-shop-swan\\ShopSwan\\ShopSwan\\ShopSwan.csproj",
       "projectName": "ShopSwan",
-      "projectPath": "C:\\Users\\nhathl\\Desktop\\Shop-Swan\\be-shop-swan\\ShopSwan\\ShopSwan\\ShopSwan.csproj",
-      "packagesPath": "C:\\Users\\nhathl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nhathl\\Desktop\\Shop-Swan\\be-shop-swan\\ShopSwan\\ShopSwan\\obj\\",
+      "projectPath": "E:\\code\\Shop-Swan\\be-shop-swan\\ShopSwan\\ShopSwan\\ShopSwan.csproj",
+      "packagesPath": "C:\\Users\\Nhat-Ne\\.nuget\\packages\\",
+      "outputPath": "E:\\code\\Shop-Swan\\be-shop-swan\\ShopSwan\\ShopSwan\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nhathl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nhat-Ne\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6261,7 +6265,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
       }
     }
   }

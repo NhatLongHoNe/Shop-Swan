@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewData["Title"] = "Thêm mới sản phẩm";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<div class="text-center mt-40">
+    <h1>THÊM MỚI SẢN PHẨM</h1>
+</div>
+<div class="main-cart">
+    <div class="d-flex">
+        <div class="col-8">
+            <div class="form-cart">
+                <div class="form-group">
+                    <div class="n-row">
+                        <div class="col-3">
+                            <p>Tên sản phẩm</p>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-control" placeholder="Tên sản phẩm">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="n-row">
+                        <div class="col-3">
+                            <p>Danh mục</p>
+                        </div>
+                        <div class="col-9">
+                            <div class="n-row">
+                                <div class="col-4">
+                                    <div class="pr-15">
+                                        <select name="" class="form-control" id=""
+                                                placeholder="Chọn danh mục">
+                                            <option value="">Chọn danh mục</option>
+                                            <option value="">Áo</option>
+                                            <option value="">Quần</option>
+                                            <option value="">Phụ kiện</option>
+                                            <option value="">Váy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="pr-15">
+                                        <select name="" class="form-control" id=""
+                                                placeholder="Giới tính">
+                                            <option value="">Giới tính</option>
+                                            <option value="">Nam</option>
+                                            <option value="">Nữ</option>
+                                            <option value="">Cả hai</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="n-row">
+                        <div class="col-3">
+                            <p>Tiêu đề</p>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" class="form-control" placeholder="Nhập tiêu đề">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="n-row">
+                        <div class="col-3">
+                            <p>Mô tả</p>
+                        </div>
+                        <div class="col-9">
+                            <textarea type="text" class="form-control" rows="4" placeholder="Mô tả"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="n-row">
+                        <div class="col-3">
+
+                        </div>
+                        <div class="col-9">
+                            <div class="n-row">
+                                <div class="col-3">
+                                    <label for="men">
+                                        <input type="radio" name="status" id="show" class="mr-15"> Hiển thị
+                                    </label>
+                                </div>
+                                <div class="col-3">
+                                    <label for="woman">
+                                        <input type="radio" name="status" id="hide" class="mr-15"> Lưu tạm
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="n-row">
+                        <div class="col-3">
+
+                        </div>
+                        <div class="col-9">
+                            <a href="#modal-option-4" class="btn-black" style="display:inline-block;">
+                                CẬP NHẬT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group pl-30">
+                <a style="padding:7px 20px" class="btn-black text-center">Thêm ảnh</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modals">
+    <dialog class="dialog" id="modal-option-4">
+        <div class="dialog__wrapper text-center">
+            <button class="dialog__close">✕</button>
+            THÊM SẢN PHẨM THÀNH CÔNG
+        </div>
+    </dialog>
+</div>

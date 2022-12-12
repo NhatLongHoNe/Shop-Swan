@@ -65,7 +65,10 @@ ul {
     margin-left: 20px !important;
 }
 .mt-10{
-    margin-top: 10xp;
+    margin-top: 10px !important;
+}
+.mb-10 {
+    margin-bottom: 10px !important;
 }
 .pt-10{
     padding-top: 10px;

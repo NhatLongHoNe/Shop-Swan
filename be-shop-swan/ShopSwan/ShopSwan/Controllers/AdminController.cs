@@ -16,6 +16,21 @@ namespace ShopSwan.Controllers
         {
             return View();
         }
-
+        public IActionResult Category()
+        {
+            return View();
+        }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        public IActionResult Cancel()
+        {
+            return View();
+        }
+        public IActionResult Confirm()
+        {
+            return View();
+        }
     }
 }
