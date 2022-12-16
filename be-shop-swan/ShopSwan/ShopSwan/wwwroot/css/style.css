@@ -412,7 +412,7 @@ input#search-bar:focus:-ms-placeholder {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
     line-height: 53px;
 }
